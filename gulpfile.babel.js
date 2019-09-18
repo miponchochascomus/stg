@@ -12,10 +12,10 @@ import tailwindcss from "tailwindcss";
 import uglify from "gulp-uglify";
 import rename from "gulp-rename";
 
-const rawStylesheet = "src/css/style.css";
+const rawStylesheet = "css/style.css";
 const siteRoot = "docs";
-const cssRoot = `${siteRoot}/assets/css/`;
-const jsRoot = `${siteRoot}/assets/js/`;
+const cssRoot = `${siteRoot}/css/`;
+const jsRoot = `${siteRoot}/js/`;
 const tailwindConfig = "tailwind.config.js";
 
 const devBuild =
@@ -99,11 +99,11 @@ task("startServer", () => {
 });
 
 task("processJs", done => {
-  return src('src/js/*.js')
+  return src('js/**/*.js')
     .pipe(gulpif(!devBuild, uglify()))
-    .pipe(gulpif(!devBuild, rename({
+    .pipe(rename({
       suffix: '.min'
-    })))
+    }))
     .pipe(dest(jsRoot))
 });
 

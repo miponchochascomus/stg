@@ -7,492 +7,58 @@
   <title>Mi Poncho</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="flex items-center justify-between flex-wrap p-6 bg-white">
+<nav class="flex items-center justify-between flex-wrap pl-4 bg-white fixed top-0 left-0 right-0">
   <div class="flex items-center flex-shrink-0 mr-6">
-    <span class="font-semibold text-xl tracking-tight text-gray-800">Mi Poncho</span>
+    <a href="/" class="font-semibold p-4 text-xl tracking-tight text-gray-600">
+      Mi Poncho
+    </a>
   </div>
-  <div class="block lg:hidden">
-    <button class="flex items-center px-3 py-2 border rounded text-gray-600 border-teal-400 hover:text-white hover:border-white">
+  <div class="block lg:hidden p-4">
+    <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white  hover:bg-yellow-600">
       <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
     </button>
   </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+
+  <!-- <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content"> -->
+  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden" id="nav-content">
     <div class="text-sm lg:flex-grow">
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Docs
+      <a href="gallery" class="font-bold p-4 block lg:inline-block lg:mt-0 hover:text-white hover:bg-orange-600">
+        Galería
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        Examples
+      <a href="services" class="font-bold p-4 block lg:inline-block lg:mt-0 hover:text-white hover:bg-orange-600">
+        Servicios
       </a>
-      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-        Blog
+      <a href="contact" class="font-bold p-4 block lg:inline-block lg:mt-0 hover:text-white hover:bg-orange-600">
+        Contacto
       </a>
-    </div>
-    <div>
-      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
     </div>
   </div>
 </nav>
 
-
-<main
-  class="bg-yellow-500 flex h-screen items-center justify-center w-full"
->
-
-
-  <h1 class="text-white text-4xl font-semibold">Mi Poncho</h1>
-<!--
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no" />
-            <link rel="shortcut icon" href="favicon.ico"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css">
-            <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
-            <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-            <link href="css/style.css" rel="stylesheet" type="text/css"/>
-      <title>SOLIARIS</title>
-  </head>
-
-<body class="page-style-4 color-style-2">
-
-     <div class="preloader">
-         <div class="sk-cube-grid selected">
-          <div class="sk-cube sk-cube1"></div>
-          <div class="sk-cube sk-cube2"></div>
-          <div class="sk-cube sk-cube3"></div>
-          <div class="sk-cube sk-cube4"></div>
-          <div class="sk-cube sk-cube5"></div>
-          <div class="sk-cube sk-cube6"></div>
-          <div class="sk-cube sk-cube7"></div>
-          <div class="sk-cube sk-cube8"></div>
-          <div class="sk-cube sk-cube9"></div>
-        </div>
-    </div>
-
-    <section class="full-height-baner full-sm offset-baner">
-     <div class="empty-sp-lg-0 empty-sp-md-160 empty-sp-sm-100 empty-sp-xs-100"></div>
-      <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url(img/page/contact_main_img.jpg)"><div class="hold-layer-2"></div></div>
-         <div class="main-baner vertical-align">
-           <div class="container">
-            <div class="title-style-1">
-               <h1 class="caption-1 lg color-1">Wellcome to Soliaris</h1>
-                <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
-                 <div class="simple-text size-2 color-1">
-                     <div class="simple-text">
-                        <p>Power Unique HTML Template</p>
-                     </div>
-                 </div>
-            </div>
-           </div>
-        </div>
-      <div class="empty-sp-lg-0 empty-sp-md-160 empty-sp-sm-100 empty-sp-xs-100"></div>
-     </section>
-
-     <section class="section">
-       <div class="mobile-filter-wrap fix-line">
-         <div class="change-text"><span>All</span><i class="icon-down-open-big"></i></div>
-          <ul class="filter-mob-list type-1 isotope-filter-list ld-style">
-            <li data-filter="*" class="active">All</li>
-            <li data-filter=".home">Home</li>
-            <li data-filter=".about">About</li>
-            <li data-filter=".portfolio">Portfolio</li>
-            <li data-filter=".blog">Blog</li>
-            <li data-filter=".service">Service</li>
-            <li data-filter=".contact">Contact</li>
-          </ul>
-        </div>
-        <div class="empty-sp-lg-130 empty-sp-md-100 empty-sp-sm-80 empty-sp-xs-70"></div>
-          <div class="container">
-            <div class="row">
-                 <div class="izotope-container size-1">
-                    <div class="grid-sizer"></div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v10.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_1.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v10.html">Home 1</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v11.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_2.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v11.html">Home 2</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v25.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_3.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v25.html">Home 3</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v30.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_4.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Home 4</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v32.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_10.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Home 5</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v12.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_8.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Home 6</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 home">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="home_v13.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_9.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Home 7</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 about">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="about_1.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_11.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">About 1</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 about">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="about_2.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_12.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">About 2</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-
-                      <div class="item col-33 portfolio">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="portfolio_1.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_13.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Portfolio 1</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 portfolio">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="portfolio_2.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_14.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Portfolio 2</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 portfolio">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="portfolio_3.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_15.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Portfolio 3</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 portfolio">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="portfolio_detail.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_16.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Portfolio 4</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-
-                      <div class="item col-33 blog">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="blog.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_5.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="blog.html">Blog</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 blog">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="blog_post.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_6.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="blog_post.html">Blog detail</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-                      <div class="item col-33 contact">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="contact.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_7.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="contact.html">Contact</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-
-                      <div class="item col-33 service">
-                          <div class="portfolio-item-1 type-1 ld-demo">
-                           <div class="image">
-                              <a href="service.html" class="layer"><span class="l-border"><i></i></span></a>
-                               <div class="bg" style="background-image:url(img/demo_17.jpg)"></div>
-                           </div>
-                           <div class="empty-sp-sm-15 empty-sp-xs-10"></div>
-                           <h5 class="caption-5 title"><a href="home_v30.html">Service</a></h5>
-                           <div class="empty-sp-sm-30 empty-sp-xs-25"></div>
-                          </div>
-                      </div>
-
-                  </div>
-            </div>
-          </div>
-        <div class="empty-sp-lg-100 empty-sp-md-70 empty-sp-sm-50 empty-sp-xs-40"></div>
-     </section>
-
-     <section class="section bg-section-1">
-        <div class="empty-sp-lg-130 empty-sp-md-100 empty-sp-sm-80 empty-sp-xs-70"></div>
-          <div class="container">
-             <div class="row">
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-mobile"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Fully responsive</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                   <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-fontsize"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Google font</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                    <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-mouse"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Scrolling animation</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                    <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-vkontakte"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Bootstrap Framework</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                      <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-beaker"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Valid and Semantic HTML</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                      <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-th"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Masonry Portfolio</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                      <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-monitor"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Retina ready</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                    <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-sliders"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">Tabs and Accordions</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                      <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-                 <div class="col-md-4 col-sm-12">
-                     <div class="item-icon type-2">
-                         <div class="icon color-1">
-                           <i class="icon-chrome"></i>
-                         </div>
-                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                          <h5 class="caption-4 color-1">cross browser</h5>
-                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                            <div class="simple-text color-1 size-1">
-                                <p>Lorem ipsum dolor sit amet, animals consectetur adipiscing Curabitur feugiat feugiat bibendum</p>
-                            </div>
-                      </div>
-                    <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
-                 </div>
-             </div>
-          </div>
-        <div class="empty-sp-lg-100 empty-sp-md-70 empty-sp-sm-50 empty-sp-xs-40"></div>
-    </section>
-
-    <footer class="footer-style-1">
-      <div class="container-custome">
-        <div class="copyright">
-          <span>© 2016 All rights reserved. Development with <i class="icon-heart"></i> by</span>
-            <a href="#"> ElectricBlaze</a>
-        </div>
-        <div class="folow type-1">
-            <a href="#" target="_blank"><i class="icon-facebook"></i></a>
-            <a href="#" target="_blank"><i class="icon-instagram"></i></a>
-            <a href="#" target="_blank"><i class="icon-pinterest"></i></a>
-            <a href="#" target="_blank"><i class="icon-twitter"></i></a>
-        </div>
-      </div>
-   </footer>
-
 <script>
-  function submitForm() {
-    $.ajax({type:'POST', url:'email-action.php', data:$('#contact-form').serialize(), success: function(response) {
-       $('.submit').html('send');
-       $('.thanks-popup').addClass('active');
-       document.contactform.reset();
-    }});
-    return false;
+  document.getElementById('nav-toggle').onclick = function(){
+    document.getElementById("nav-content").classList.toggle("hidden");
   }
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<script src="js/map.js"></script>
-<script src="js/jarallax.js"></script>
-<script src="js/jquery.countTo.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/all.js"></script>
-</body>
-</html>      -->
 
+
+<main>
+  <section class="bg-fixed bg-cover bg-center flex h-screen items-center justify-center w-full"
+    style="background-image: url('images/cover.jpg')">
+    <!-- <h1 class="text-4xl font-semibold">Mi Poncho</h1> -->
+  </section>
+  <section class="bg-yellow-500 flex h-screen items-center justify-center w-full">
+    <h1 class="text-4xl font-semibold">Mi Poncho</h1>
+  </section>
 </main>
 
-<script src="js/jarallax.js"></script>
+
+
 </body>
 </html>
 
