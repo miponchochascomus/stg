@@ -8353,6 +8353,24 @@ video {
   z-index: auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
