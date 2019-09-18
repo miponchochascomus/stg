@@ -2,17 +2,20 @@ import autoprefixer from "autoprefixer";
 import browserSync from "browser-sync";
 import { spawn } from "child_process";
 import cssnano from "cssnano";
-import { dest, series, src, task, watch } from "gulp";
+import { dest, series, src, task, watch, parallel } from "gulp";
 import gulpif from "gulp-if";
 import postcss from "gulp-postcss";
 import purgecss from "gulp-purgecss";
 import sourcemaps from "gulp-sourcemaps";
 import atimport from "postcss-import";
 import tailwindcss from "tailwindcss";
+import uglify from "gulp-uglify";
+import rename from "gulp-rename";
 
-const rawStylesheet = "src/style.css";
+const rawStylesheet = "src/css/style.css";
 const siteRoot = "docs";
 const cssRoot = `${siteRoot}/assets/css/`;
+const jsRoot = `${siteRoot}/assets/js/`;
 const tailwindConfig = "tailwind.config.js";
 
 const devBuild =
@@ -95,7 +98,16 @@ task("startServer", () => {
   );
 });
 
-const buildSite = series("buildJekyll", "processStyles");
+task("processJs", done => {
+  return src('src/js/*.js')
+    .pipe(gulpif(!devBuild, uglify()))
+    .pipe(gulpif(!devBuild, rename({
+      suffix: '.min'
+    })))
+    .pipe(dest(jsRoot))
+});
+
+const buildSite = series("buildJekyll", parallel("processStyles", "processJs"));
 
 exports.serve = series(buildSite, "startServer");
 exports.default = series(buildSite);
