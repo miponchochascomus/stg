@@ -100,10 +100,7 @@ task("startServer", () => {
 
 task("processJs", done => {
   return src('js/**/*.js')
-    .pipe(gulpif(!devBuild, uglify()))
-    .pipe(rename({
-      suffix: '.min'
-    }))
+    .pipe(uglify())
     .pipe(dest(jsRoot))
 });
 
