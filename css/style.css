@@ -15,9 +15,6 @@ body {
 }
 
 .carousel {
-  /*padding: 90px 0;*/
-  text-align: center;
-  @apply relative;
   height: 90vh;
 }
 
@@ -27,47 +24,21 @@ body {
 }
 
 .carousel-inner > .item {
-  position: relative;
   display: none;
-  height: 100%;
-  animation: 0.5s ease-in-out;
+  @apply w-full h-full;
 }
 
-.carousel-inner > .active,
-.carousel-inner > .next {
+.carousel-inner > .active {
   display: block;
-}
-
-.carousel-inner > .next {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.carousel-inner > .to-left {
-  animation-name: left;
-}
-
-.carousel-inner > .from-right {
-  animation-name: right;
-}
-
-.carousel-inner > .to-right {
-  animation-name: right;
-  animation-direction: reverse;
-}
-
-.carousel-inner > .from-left {
-  animation-name: left;
-  animation-direction: reverse;
 }
 
 .container {
   margin: 0 auto;
-  height: 100%;
+  @apply h-full;
+  vertical-align: middle;
 }
 
-.img {
+.container img.vert {
   height: 100%;
 }
 
@@ -131,7 +102,7 @@ body {
 .carousel-indicators li.active {
   background-color: #FFFFFF;
 }
-
+/*
 @media (min-width: 992px) {
   .container {
     max-width: 970px;
@@ -143,7 +114,7 @@ body {
     max-width: 1170px;
   }
 }
-
+*/
 /*@keyframes left {
   from {
     left: 0;
